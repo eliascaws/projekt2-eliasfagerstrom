@@ -13,12 +13,12 @@ public class Game {
     public Game() {
         running = true;
         this.resident = new Resident();
-        this.burglar = new Burglar();  // Instantiate Burglar here
+        this.burglar = new Burglar();  
     }
 
     public void start() {
         introduction();
-        Movement.livingRoom(resident); // Direct static method call
+        Movement.livingRoom(resident);
         while (running) {
             printGameMenu();
             int userInput = getUserInput();
